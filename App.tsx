@@ -34,11 +34,19 @@ export default function App() {
         {/* Card */}
         <View style={styles.card}>
           <Text style={styles.subtitle}>View Contacts</Text>
-          <TextInput
-            inputMode="text"
-            placeholder="Search by Name"
-            style={styles.input}
-          />
+          <View style={styles.miniCard}>
+            <View style={styles.miniCardRounded}>
+              <Text style={styles.buttonText}>S</Text>
+            </View>
+
+            <Text style={styles.subtitle2} >Sahan{"\n"}0742746852</Text>
+
+           {/* // <Text style={styles.subtitle2} >0742746852</Text> */}
+
+            <View style={styles.miniCardRounded2}>
+              <Text style={styles.buttonText}>📞</Text>
+            </View>
+          </View>
         </View>
 
         <StatusBar style="dark" />
@@ -71,7 +79,36 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 5,
-    elevation: 3, // Android shadow
+    elevation: 3,
+  },
+
+  miniCard: {
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    padding: 20,
+    width: "100%",
+    marginVertical: 10,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 5,
+    elevation: 3,
+    flexDirection: "row"
+  },
+
+  miniCardRounded: {
+    backgroundColor: "#0e79f3ff",
+    borderRadius: 50,
+    padding: 20,
+    width: "25%",
+    height: 60,
+  },
+  miniCardRounded2: {
+    backgroundColor: "#08df50ff",
+    borderRadius: 50,
+    padding: 20,
+    width: "25%",
+    height: 60,
   },
 
   subtitle: {
@@ -79,6 +116,15 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#34495e",
     marginBottom: 15,
+  },
+
+
+  subtitle2: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#34495e",
+    marginBottom: 15,
+    marginHorizontal: 10
   },
 
   input: {
