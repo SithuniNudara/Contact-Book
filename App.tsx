@@ -100,14 +100,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#0e79f3ff",
     borderRadius: 50,
     padding: 20,
-    width: "25%",
+    width: "26%",
     height: 60,
   },
   miniCardRounded2: {
     backgroundColor: "#08df50ff",
     borderRadius: 50,
     padding: 20,
-    width: "25%",
+    width: "26%",
     height: 60,
   },
 
