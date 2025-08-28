@@ -41,7 +41,7 @@ export default function App() {
 
             <Text style={styles.subtitle2} >Sahan{"\n"}0742746852</Text>
 
-           {/* // <Text style={styles.subtitle2} >0742746852</Text> */}
+            {/* // <Text style={styles.subtitle2} >0742746852</Text> */}
 
             <View style={styles.miniCardRounded2}>
               <Text style={styles.buttonText}>📞</Text>
